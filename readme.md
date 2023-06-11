@@ -5,3 +5,8 @@ https://medium.com/layhill-l-tech/creating-a-new-express-project-with-typescript
 Run this app using: 
 1. npm run build
 2. npm run dev
+
+Setup mongodb in windows:
+https://www.youtube.com/watch?v=1y5sAnn0ans
+
+start mongod service and run the api's
