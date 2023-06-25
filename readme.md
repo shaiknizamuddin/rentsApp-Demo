@@ -8,5 +8,5 @@ Run this app using:
 
 Setup mongodb in windows:
 https://www.youtube.com/watch?v=1y5sAnn0ans
-
+(mongodb started as service in windows , when computer turns on)
 start mongod service and run the api's

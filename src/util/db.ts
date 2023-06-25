@@ -10,8 +10,8 @@ export class DbClient {
     await mongoose.connect(`${config.db.DB_URL}/${config.db.DB_NAME}`);
   }
 
-  public dbInstance() {
-    return this.db.collection("owner");
+  public dbInstance(collectionName) {
+    return this.db.collection(collectionName);
   }
 }
 

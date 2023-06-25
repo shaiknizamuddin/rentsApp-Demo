@@ -9,7 +9,7 @@ const model = new schema({
     type: String,
     required: true,
     match: [
-      /^[1-9][\d]{9}$/,
+      /^[1-9]\d{9}$/,
       "The value of path {PATH} ({VALUE}) is not a valid mobile number.",
     ],
   },
