@@ -3,6 +3,7 @@ const schema = mongoose.Schema;
 
 const propertyModel = new schema({
   property_name: { type: String, required: true },
+  
   phone_number: {
     type: String,
     required: true,
