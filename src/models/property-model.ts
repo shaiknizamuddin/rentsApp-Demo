@@ -3,16 +3,14 @@ const schema = mongoose.Schema;
 
 const propertyModel = new schema({
   property_name: { type: String, required: true },
-  
   phone_number: {
     type: String,
-    required: true,
     match: [
       /^[1-9]\d{9}$/,
       "The value of path {PATH} ({VALUE}) is not a valid mobile number.",
     ],
   },
-  property_address: { type: String },
+  property_address: { type: String, required:true },
   start_date: { type: Date },
   property_value: { type: String },
   no_of_floors: { type: String },
@@ -22,7 +20,9 @@ const propertyModel = new schema({
   maintainence: { type: String },
   property_tax: { type: String },
   water_tax: { type: String },
+  latitude: { type: String },
+  longitude: { type: String },
 });
 
-const propertySchema = mongoose.model("Tenent", propertyModel);
+const propertySchema = mongoose.model("Property", propertyModel);
 export default propertySchema;

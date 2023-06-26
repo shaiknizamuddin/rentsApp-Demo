@@ -10,3 +10,7 @@ Setup mongodb in windows:
 https://www.youtube.com/watch?v=1y5sAnn0ans
 (mongodb started as service in windows , when computer turns on)
 start mongod service and run the api's
+
+#Running the Angular application as a node application.
+build the angular app using `ng build`
+Build and Run the node app and run the client app at: http://localhost:8060/ 

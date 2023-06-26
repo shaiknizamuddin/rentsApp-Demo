@@ -17,7 +17,7 @@ const model = new schema({
   last_active: { type: Date },
   created_at: { type: Date, default: Date.now },
   is_active: { type: Boolean, default: "false" },
-  role: { type: String },
+  role: { type: String, enum: ["owner", "admin"] },
 });
 
 const ownerSchema = mongoose.model("Owner", model);
